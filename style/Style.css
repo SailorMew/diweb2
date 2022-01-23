@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+    background-image: url("back.jpg");
+    margin: 0 5%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.3fr 1.1fr 1.2fr 0.4fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "description description description"
+      "task1_con task1_con task1_con"
+      "task2_con task2_con task2_con"
+      "test test test";
+      
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(34, 6, 6, 0.22);
+  }
+  
+  
+  .header {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.7fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . .";
+    grid-area: header;
+    align-items: center;
+    
+  }
+  
+ 
+ .theme-button
+  {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      display: inline-block;
+      padding: 10px 25px;
+      cursor: pointer;
+  
+  }
+  .theme-button
+{
+    color: #f4f4f4;
+    background: #000000;
+}
+
+.theme-button:hover
+{
+    background: #6f9fcf;
+}
+  
+  .description {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". .";
+    grid-area: description;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .task_con {
+    grid-area: task1_con;
+  }
+
+  .task2_con { 
+    grid-area: task2_con; 
+  }
+  
+  .test { 
+    grid-area: test;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+  }
+  .scrollTop{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    cursor:pointer;
+    height:20px;
+  }
+
+  .description, .test{
+    box-shadow: 0 0px 5px rgba(167, 125, 125, 0.22);
+  }
+
+  .description, .description *, .test, .test *{
+    background-color: #523e5a;
+  }
+
+  button {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    text-decoration: none;
+    user-select: none;
+    background: #3c0044 !important;
+    padding: .7em 1.5em;
+    outline: none;
+    border: 0;
+  } 
+  button:active { background: #3c0044; }
+
+  h1, h3, button, ul p:first-child, .footer p, .test p{
+    font-family: 'Raleway', sans-serif;   
+  }
+
+  h1, h3, button{
+    color: rgb(190, 187, 187);
+  }
+
+  .sign_in{
+      width: 90%;
+  }
+
+  ul, div{
+    background-color: rgb(86, 71, 110);
+  }
+
+  ul p:first-child, .footer p, .test{
+    text-align: center;
+    font-size: 1.5em;
+  }
+  #picture {
+    background-size: cover;
+    background: url(picture.jpeg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .description p{
+    margin: 0.5% 2%;
+    font-size: 1.3em;
+    text-indent: 3%;
+  }
+
+  hr {
+    margin: 20px 0;
+    padding: 0;
+    height: 2px;
+    border: none;
+    background-image: -webkit-linear-gradient(left, rgb(0, 0, 0), #3c0044, #000000, #3c0044, rgb(0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgb(0, 0, 0), #3c0044, #000000, #3c0044, rgb(0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgb(0, 0, 0), #3c0044, #000000, #3c0044, rgb(0, 0, 0));
+    background-image: -o-linear-gradient(left, rgb(0, 0, 0), #3c0044, #000000, #3c0044, rgb(0, 0, 0)); 
+  }
+
+  .question_block, .end_block{
+    display: none;
+  }
+
+  .next_btn, .test_run_btn, .final_btn{
+    margin-bottom: 2%;
+    font-size: 1em;
+    width: 70%;
+  }
+  
